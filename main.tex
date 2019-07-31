@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{0059b3}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{James Hardy Windsor}
+\tagline{[Code, Music, Theater, Video, Running] Nerd}
+\photo{2.5cm}{jay}
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{jayhwindsor@gmail.com}
+  \phone{757-469-2491}
+  \mailaddress{2038 155th Pl NE, Apt. 310}
+  \location{Bellevue, WA}
+  \linkedin{linkedin.com/in/jayhwindsor/}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Education}
+
+\cvevent{B.S.\ in Computer Engineering}{University of Virginia, School of Engineering and Applied Science}{Aug 2013 -- May 2017}{Charlottesville, VA}
+
+3.890 GPA, 3.98 in-major GPA
+
+\divider
+\cvachievement{\faTrophy}{Awards and Honors}{\begin{itemize}
+\item Louis T. Rader Chairperson’s Award for Best Capstone Project
+\item Member of Tau Beta Pi Engineering Honor's Society
+\item Dean's List (All eight semesters)
+\item Intermediate Honors (Top 20\% of class beginning of third year)
+\end{itemize}}
+
+
+\cvsection{Experience}
+
+\cvevent{Software Engineer (Level 60)}{Microsoft}{Aug 2017 -- Ongoing}{Redmond, WA}
+\begin{itemize}
+\item Dynamics 365 for Talent - Full stack developer for Onboard app (Angular and C\# Service Fabric backend). Implemented features to scale the service for use with the Windows group. As only dev on the team, bootstrapped the project and performed initial design, and the team has since expanded. Within 5 months of starting the project, 70\% of leads in Windows have adopted the tool.
+\item Windows Engineering System - Designed APIs (Node.js Express) and frontend (Angular) for an internal data analytics platform. Wrote queries in T-SQL and internal big data platforms to generate metrics.
+\item Built package to run Angular apps as Azure DevOps plugins, with full access to DevOps data and controls. Adopted by several first-party DevOps plugins.
+\end{itemize}
+
+\divider
+
+\cvevent{Augmented Reality Engineer Intern}{Huntington Ingalls - Newport News Shipbuilding}{May 2016 -- Aug 2016}{Newport News, VA}
+\begin{itemize}
+\item Designed tools and scripts in Unity to aid in the AR app design process. These tools included scripts that enabled drawing in 3D space and calculating areas and distances in the AR environment.
+\item Worked to jumpstart AR integration with the Internet of Things, and created APIs in Unity 3D to interface with shipyard IoT devices.
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer Intern}{Huntington Ingalls - Newport News Shipbuilding}{May 2015 -- Aug 2015}{Newport News, VA}
+
+\begin{itemize}
+\item Built ASP.NET application to automate deployment of in-house CAD software.
+\item Built Windows Forms App that created MS TFS Work Items from templates.
+\item Used MS SQL Reporting Services with TFS Data Warehouse to improve development progress reports for management.
+\end{itemize}
+
+%\divider
+
+%\cvevent{iOS Development Intern}{Willowtree Apps}{July 2012}{Charlottesville, VA}
+
+%\begin{itemize}
+%\item Only high school student intern in history of the company.
+%\item Developed Lish - an image editing app that posts images to Twitter. Lish was a short-term promotional app that is no longer on the App Store.
+%\end{itemize}
+
+\clearpage
+
+
+\end{document}
